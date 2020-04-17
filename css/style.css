@@ -307,6 +307,32 @@ h2:after {
 /*=============== Why Choose Section End ===============*/
 
 
+/*=============== Blog Section Start ===============*/
+
+#blog .blog-div {
+    background: #149632;
+    padding: 1rem;
+    border: 4px solid #E6E8EB;
+    color: white;
+    border-radius: 20px;
+}
+
+#blog .blog-div h5 {
+    font-weight: bold;
+}
+
+#blog .blog-div .date {
+    font-size: .8rem;
+}
+
+#blog .blog-div .blog-description {
+    text-align: justify;
+}
+
+/*=============== Blog Section End ===============*/
+
+
+
 /*=============== App link Section Start ===============*/
 #app {
     background-image: url(../img/app-link-bg.jpg);
