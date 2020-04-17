@@ -1,0 +1,478 @@
+/*-----------------------------------------------------------
+* Template Name    : Prototype
+* Author           : IMAMHOSSAINBD
+* Version          : 1.0.0
+* Created          : DEC 2019
+* Color            : #161c2d(black), #c52c20(red), #00adb5(green) and                        lightgray.
+*------------------------------------------------------------
+*/
+
+
+/* ================================================*/
+/*====================== Home Page =================*/
+/* ================================================*/
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden !important;
+    color: #161c2d;
+}
+
+section,
+footer {
+    padding: 4rem 0;
+    position: relative;
+}
+
+h4 {
+    text-align: center;
+    font-weight: bold;
+
+}
+
+h4:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: calc(50% - 37px);
+    border-radius: 3px;
+    top: 6.9rem;
+    background-color: #59c660;
+
+}
+
+h4:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: calc(50% - -6px);
+    border-radius: 3px;
+    top: 6.9rem;
+    background-color: #59c660;
+}
+
+h2:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: calc(50% - 37px);
+    border-radius: 3px;
+    top: 17.4rem;
+    background-color: #59c660;
+
+}
+
+h2:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: calc(50% - -6px);
+    border-radius: 3px;
+    top: 17.4rem;
+    background-color: #59c660;
+}
+
+.bottom-circle {
+    position: absolute;
+}
+
+.description {
+    text-align: justify;
+}
+
+
+
+/*=============== Navbar & Carousel Start ===============*/
+
+
+
+.navbar-custom {
+    background: background-color: #59c660;
+    background-image: linear-gradient(315deg, #59c660 0%, #149632 74%);
+    ;
+    border-bottom: 2px solid white;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-custom.scrolled {
+    transition: 750ms ease;
+    background-color: #F4F6F7;
+
+}
+
+.navbar-custom.scrolled .navbar-nav a {
+    color: yellow !important;
+}
+
+.navbar-custom.scrolled {
+    border-bottom-color: yellow;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-custom.scrolled .navbar-brand {
+    color: #222831;
+}
+
+.navbar-nav a {
+    font-weight: bold;
+    color: #eeeeee !important;
+}
+
+.navbar-nav a i {
+    font-size: .8rem;
+}
+
+.navbar-nav .active a {
+    color: #00adb5 !important;
+}
+
+.nav-item a i {
+    vertical-align: .255em;
+    margin-left: .255em;
+    font-size: 1rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0 1rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: lightgray;
+    transition: 1s;
+}
+
+.dropdown-menu {
+    background: #f8f9fa !important;
+
+}
+
+.dropdown-menu a {
+    color: #222831;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+
+}
+
+.mega-menu {
+    width: 50rem;
+    padding: .5rem;
+
+}
+
+.mega-menu .service-submenu .col-md-4 {
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+}
+
+.mega-menu .link {
+    margin: .5rem .2rem;
+    border-radius: .5rem;
+    color: #222831;
+}
+
+.mega-menu .link:hover {
+    border: 1px solid #E6E8EB;
+    transition: 1s;
+
+}
+
+.mega-menu .link .icon {
+    padding: .3rem;
+
+}
+
+.mega-menu .link .icon i {
+    font-size: 2rem;
+    padding: .3rem .3rem;
+    background: #eeeeee;
+}
+
+.mega-menu .link .text span {
+    font-size: 1rem;
+    display: inline-block;
+    line-height: 1.5;
+
+
+}
+
+.mega-menu .link .text .sub-title {
+    font-size: .6rem;
+}
+
+.mega-footer {
+    padding: 1rem;
+}
+
+
+
+
+/*=============== Navbar & Carousel End ===============*/
+
+
+/*=============== Service Section Start ===============*/
+.title {
+    padding-bottom: 1.5rem;
+}
+
+.title span {
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: #59c660;
+    font-weight: bold;
+}
+
+.card {
+    background: #f8f9fa !important;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    text-align: center;
+}
+
+.card:hover {
+    -webkit-box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
+    border: transparent !important;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.card:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    display: block;
+    height: 2px;
+    width: 0;
+    -webkit-transition: 1s;
+    transition: 1s;
+    background: #149632;
+}
+
+.card:hover:after {
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.card-body {
+    padding: 1rem .5rem;
+    ;
+}
+
+/*=============== Sevice Section End ===============*/
+
+
+
+
+/*=============== Why Choose Section Start ===============*/
+#whyChoose .icon {
+    padding-bottom: 1.5rem;
+}
+
+#whyChoose .chooseTittle h5 a {
+    text-decoration: none;
+    color: black;
+}
+
+#whyChoose .chooseTittle {
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+#whyChoose .icon-div {
+    transition: 1s all;
+}
+
+#whyChoose .icon-div:hover {
+    transform: scale(1.1);
+    transition: 1s all;
+}
+
+
+
+
+/*=============== Why Choose Section End ===============*/
+
+
+/*=============== App link Section Start ===============*/
+#app {
+    background-image: url(../img/app-link-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    padding-top: 4rem;
+}
+
+#app .app-text h3 {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    word-spacing: .8rem;
+}
+
+/*=============== App link Section Start ===============*/
+
+/*=============== Footer Start ===============*/
+footer {
+    background: #393e46;
+    color: #eeeeee;
+}
+
+
+footer hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+    border-top: 1px solid #495057;
+}
+
+footer h5 {
+    color: #149632;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    padding-bottom: .8rem;
+    margin-bottom: .8rem;
+}
+
+.social-link {
+    padding-bottom: 1rem;
+}
+
+footer .link a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-link ul li {
+    display: inline-block;
+    margin: 1rem .5rem;
+    ;
+
+}
+
+footer .social-link ul li a {
+    color: #eeeeee;
+    border-radius: 0.3rem;
+    padding: .4rem;
+    border: 1px solid #f9f6f7;
+}
+
+footer ul li a:hover {
+    color: #89c784;
+    transition: 1s ease;
+}
+
+.footer-bottom {
+    color: lightgray;
+    padding-top: 1rem;
+}
+
+.footer-bottom a {
+    color: lightgray;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+
+/*=============== Footer End ===============*/
+
+
+
+/* ================================================*/
+/*====================== About Page =================*/
+/* ================================================*/
+
+/*=============== About Section Start ===============*/
+
+.about-jumbotron .jumbotron {
+    background: linear-gradient(rgba(29, 29, 29, .7), rgba(29, 29, 29, .7)), url(../img/about-bg.jpeg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    padding-bottom: 8rem;
+    height: 80vh;
+    margin-bottom: 0;
+}
+
+.about .about-text {
+    font-size: 1rem;
+    line-height: 2;
+    text-align: justify;
+}
+
+.about-top {
+    padding-top: 8rem;
+}
+
+
+/* ================================================*/
+/*====================== Contact Page =================*/
+/* ================================================*/
+
+.contact-jumbotron .jumbotron {
+    background: linear-gradient(rgba(29, 29, 29, .7), rgba(29, 29, 29, .7)), url(../img/contact-bg.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    padding-bottom: 8rem;
+    height: 80vh;
+    margin-bottom: 0;
+}
+
+
+/* ================================================*/
+/*====================== Privacy Policy Page =================*/
+/* ================================================*/
+
+.privacy-jumbotron .jumbotron {
+    background: linear-gradient(rgba(29, 29, 29, .7), rgba(29, 29, 29, .7)), url(../img/privacy-policy.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    padding-bottom: 8rem;
+    height: 60vh;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+/* ================================================*/
+/*====================== Privacy Policy Page =================*/
+/* ================================================*/
+
+.conditions-jumbotron .jumbotron {
+    background: linear-gradient(rgba(29, 29, 29, .7), rgba(29, 29, 29, .7)), url(../img/terms_conditions.jpeg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    padding-bottom: 8rem;
+    height: 60vh;
+    margin-bottom: 0;
+}
