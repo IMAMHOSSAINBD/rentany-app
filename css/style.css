@@ -307,23 +307,51 @@ h2:after {
 /*=============== Why Choose Section End ===============*/
 
 
-/*=============== How to use Section start ===============*/
+/*=============== Best App Section start ===============*/
 
-#HowtoUse .appfeatureText {
+#bestApp .appfeatureText {
 
     padding: 12rem 2rem 0 4rem;
 
 }
 
-#HowtoUse .appfeatureText h3 {
+#bestApp .appfeatureText h3 {
     font-size: 40px;
 }
 
-#HowtoUse .appfeatureText p {
+#bestApp .appfeatureText p {
     font-size: 1.5rem;
 }
 
 
+
+/*=============== Best App Section End ===============*/
+
+
+/*=============== How to use Section Start ===============*/
+
+#HowtoUse .img-top img {
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+}
+
+#HowtoUse .item {
+    border: 3px solid #149632;
+    padding: .5rem;
+    transition: 1s all;
+    margin: 1rem;
+}
+
+#HowtoUse .item:hover {
+    transition: 1s all;
+    transform: scale(1.05);
+    border-radius: 20px;
+}
+
+#HowtoUse .item:hover .shadow {
+    box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+    transition: 1s all;
+}
 
 /*=============== How to use Section End ===============*/
 
@@ -523,4 +551,40 @@ footer ul li a:hover {
     padding-bottom: 8rem;
     height: 60vh;
     margin-bottom: 0;
+}
+
+
+
+/* ================================================*/
+/*====================== Responsive CSS =================*/
+/* ================================================*/
+
+@media (max-width: 767.99px) {
+
+    #bestApp .appfeatureText {
+        padding: 2rem;
+        text-align: center;
+    }
+
+    #app {
+        height: 60vh;
+    }
+
+    #app .app-text h3 {
+        font-size: 20px;
+    }
+
+    footer .link,
+    footer .social-link {
+        text-align: center;
+
+    }
+
+    footer .footer-bottom div {
+        float: none !important;
+        text-align: center;
+    }
+
+
+
 }
