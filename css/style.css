@@ -12,6 +12,11 @@
 /*====================== Home Page =================*/
 /* ================================================*/
 
+html {
+
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     overflow-x: hidden !important;
@@ -91,25 +96,39 @@ h2:after {
 
 
 .navbar-custom {
-    background: background-color: #59c660;
+    background-color: #59c660;
     background-image: linear-gradient(315deg, #59c660 0%, #149632 74%);
     ;
     border-bottom: 2px solid white;
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.navbar {
+    padding: 0 1rem;
+}
+
+.navbar-custom .navbar-nav .nav-item:hover a {
+    color: yellow !important;
+}
+
 .navbar-custom.scrolled {
+    -webkit-transition: 750ms ease;
     transition: 750ms ease;
     background-color: #F4F6F7;
 
 }
 
 .navbar-custom.scrolled .navbar-nav a {
-    color: yellow !important;
+    color: black !important;
+    -webkit-transition: 1s all;
+    transition: 1s all;
 }
 
 .navbar-custom.scrolled {
-    border-bottom-color: yellow;
+    border-bottom: 4px solid #9dc68a;
+    -webkit-transition: 1s all;
+    transition: 1s all;
 }
 
 .navbar-brand {
@@ -146,6 +165,7 @@ h2:after {
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
     color: lightgray;
+    -webkit-transition: 1s;
     transition: 1s;
 }
 
@@ -161,56 +181,6 @@ h2:after {
 .dropdown:hover > .dropdown-menu {
     display: block;
 
-}
-
-.mega-menu {
-    width: 50rem;
-    padding: .5rem;
-
-}
-
-.mega-menu .service-submenu .col-md-4 {
-    padding-right: .5rem !important;
-    padding-left: .5rem !important;
-}
-
-.mega-menu .link {
-    margin: .5rem .2rem;
-    border-radius: .5rem;
-    color: #222831;
-}
-
-.mega-menu .link:hover {
-    border: 1px solid #E6E8EB;
-    transition: 1s;
-
-}
-
-.mega-menu .link .icon {
-    padding: .3rem;
-
-}
-
-.mega-menu .link .icon i {
-    font-size: 2rem;
-    padding: .3rem .3rem;
-    background: #eeeeee;
-}
-
-.mega-menu .link .text span {
-    font-size: 1rem;
-    display: inline-block;
-    line-height: 1.5;
-
-
-}
-
-.mega-menu .link .text .sub-title {
-    font-size: .6rem;
-}
-
-.mega-footer {
-    padding: 1rem;
 }
 
 
@@ -293,11 +263,14 @@ h2:after {
 }
 
 #whyChoose .icon-div {
+    -webkit-transition: 1s all;
     transition: 1s all;
 }
 
 #whyChoose .icon-div:hover {
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
+    -webkit-transition: 1s all;
     transition: 1s all;
 }
 
@@ -337,19 +310,24 @@ h2:after {
 #HowtoUse .item {
     border: 3px solid #149632;
     padding: .5rem;
+    -webkit-transition: 1s all;
     transition: 1s all;
     margin: 1rem;
 }
 
 #HowtoUse .item:hover {
+    -webkit-transition: 1s all;
     transition: 1s all;
+    -webkit-transform: scale(1.05);
     transform: scale(1.05);
     border-radius: 20px;
 }
 
 #HowtoUse .item:hover .shadow {
+    -webkit-box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
     box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
     border-radius: 20px;
+    -webkit-transition: 1s all;
     transition: 1s all;
 }
 
@@ -417,12 +395,25 @@ footer hr {
     border-top: 1px solid #495057;
 }
 
+footer .logo-div {
+
+    padding-bottom: .8rem;
+    margin-bottom: .8rem;
+    border-bottom: 1px solid white;
+
+}
+
+footer h6 {
+    padding-top: 2rem;
+}
+
 footer h5 {
     color: #149632;
     font-weight: bold;
-    border-bottom: 1px solid white;
+    padding-top: 2rem;
     padding-bottom: .8rem;
     margin-bottom: .8rem;
+    border-bottom: 1px solid white !important;
 }
 
 .social-link {
@@ -450,6 +441,7 @@ footer .social-link ul li a {
 
 footer ul li a:hover {
     color: #89c784;
+    -webkit-transition: 1s ease;
     transition: 1s ease;
 }
 
@@ -477,6 +469,7 @@ footer ul li a:hover {
 /*=============== About Section Start ===============*/
 
 .about-jumbotron .jumbotron {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 29, 29, .7)), to(rgba(29, 29, 29, .7))), url(../img/about-bg.jpeg);
     background: linear-gradient(rgba(29, 29, 29, .7), rgba(29, 29, 29, .7)), url(../img/about-bg.jpeg);
     text-align: center;
     background-repeat: no-repeat;
@@ -503,33 +496,18 @@ footer ul li a:hover {
 /*====================== Contact Page =================*/
 /* ================================================*/
 
-.contact-jumbotron .jumbotron {
-    background: linear-gradient(rgba(29, 29, 29, .7), rgba(29, 29, 29, .7)), url(../img/contact-bg.jpg);
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    width: 100%;
-    padding-bottom: 8rem;
-    height: 80vh;
-    margin-bottom: 0;
-}
 
+#contact {
+    margin: 4rem 0;
+
+}
 
 /* ================================================*/
 /*====================== Privacy Policy Page =================*/
 /* ================================================*/
 
-.privacy-jumbotron .jumbotron {
-    background: linear-gradient(rgba(29, 29, 29, .7), rgba(29, 29, 29, .7)), url(../img/privacy-policy.jpg);
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    padding-bottom: 8rem;
-    height: 60vh;
-    margin-bottom: 0;
+#privacy {
+    margin: 4rem 0;
 }
 
 
@@ -541,16 +519,8 @@ footer ul li a:hover {
 /*====================== Privacy Policy Page =================*/
 /* ================================================*/
 
-.conditions-jumbotron .jumbotron {
-    background: linear-gradient(rgba(29, 29, 29, .7), rgba(29, 29, 29, .7)), url(../img/terms_conditions.jpeg);
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    padding-bottom: 8rem;
-    height: 60vh;
-    margin-bottom: 0;
+#termsConditions {
+    margin: 4rem 0;
 }
 
 
